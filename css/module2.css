@@ -1,0 +1,111 @@
+
+	h1 {
+		font-family: Helvetica, Georgia, Serif;
+		font-weight: bold;
+		text-align: center;
+
+	}
+
+	body{
+		font-family: Helvetica, Georgia, Serif;
+		
+	}
+
+	span.Chicken {
+		background-color: pink;
+		color: black;
+	}
+
+	span.Beef {
+		background-color: red;
+		color: white;
+	}
+
+	span.Sushi {
+		background-color: yellow;
+		color: black;
+	}
+
+	span {
+		display: inline-block;
+		border-bottom: black solid 1px;
+		border-left: black solid 1px;
+		padding: 4px 20px 4px 20px;
+		width: 10vh;
+		text-align: center;
+		font-weight: bold ;
+		float: right;
+	}
+
+	div {
+		
+		display: inline-block;
+		border: black solid 1px;
+		padding:0px 0px 4px 4px;
+		margin: 4px auto 4px 10px;
+		background-color: lightgray;
+	}
+
+	div.Text {
+		padding: 5px;
+		display: inline-block;
+		border: none;
+		overflow: auto;
+	}
+
+	/* Simple Responsive Framework. */
+	.row {
+		width: 100%;
+
+	}
+
+	/********** Large devices only **********/
+	@media (min-width: 992px) {
+	   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4 {
+	   		float: left;
+	   		position: relative; 
+
+	   	}
+
+	   	.col-lg-1 {
+	    	width: 90%;
+	  	}
+
+		.col-lg-2, .col-lg-3, .col-lg-4 {
+		    width: 30%;
+		}
+		
+	  
+	}
+
+	/********** Medium devices only **********/
+	@media (min-width: 768px) and (max-width: 991px) {
+		.col-md-1, .col-md-2, .col-md-3,.col-md-4 {
+	  		float: left;
+	   		position: relative; 
+	 	}
+
+
+
+		.col-md-1, .col-md-4 {
+	 		width: 90%;
+	 	}
+
+	  	.col-md-2, .col-md-3 {
+	   		width: 44%;
+	  	}
+	  
+	}
+
+
+	/********** Mobile devices only **********/
+	@media (max-width: 767px) {
+		.col-mob-1, .col-mob-2, .col-mob-3, .col-mob-4 {
+	   		float: left;
+	   		position: relative;  
+		}
+
+		.col-mob-1, .col-mob-2,.col-mob-3,.col-mob-4 {
+	    	width: 90%;
+	    }
+	}
